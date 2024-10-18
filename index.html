@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Indian Flag with Spokes</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container {
+			height: 300px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+		}
+		.flag {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.saffron, .green, .white {
+			height: 80px;
+			width: 300px;
+			border-radius: 5px;
+		}
+		.saffron {
+			background-color: orange;
+		}
+		.white {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: whitesmoke;
+			position: relative;
+		}
+		.green {
+			background-color: green;
+		}
+		.chakra {
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			border: 2px solid blue;
+			position: relative;
+		}
+		/* Creating the spokes */
+		.spoke {
+			position: absolute;
+			background-color: blue;
+			height: 38px;
+			width: 2px;
+			top: 1px;
+			left: 37px;
+			transform-origin: center bottom;
+		}
+		/* Rotating the spokes to form a circle */
+		.spoke:nth-child(1) { transform: rotate(0deg); }
+		.spoke:nth-child(2) { transform: rotate(15deg); }
+		.spoke:nth-child(3) { transform: rotate(30deg); }
+		.spoke:nth-child(4) { transform: rotate(45deg); }
+		.spoke:nth-child(5) { transform: rotate(60deg); }
+		.spoke:nth-child(6) { transform: rotate(75deg); }
+		.spoke:nth-child(7) { transform: rotate(90deg); }
+		.spoke:nth-child(8) { transform: rotate(105deg); }
+		.spoke:nth-child(9) { transform: rotate(120deg); }
+		.spoke:nth-child(10) { transform: rotate(135deg); }
+		.spoke:nth-child(11) { transform: rotate(150deg); }
+		.spoke:nth-child(12) { transform: rotate(165deg); }
+		.spoke:nth-child(13) { transform: rotate(180deg); }
+		.spoke:nth-child(14) { transform: rotate(195deg); }
+		.spoke:nth-child(15) { transform: rotate(210deg); }
+		.spoke:nth-child(16) { transform: rotate(225deg); }
+		.spoke:nth-child(17) { transform: rotate(240deg); }
+		.spoke:nth-child(18) { transform: rotate(255deg); }
+		.spoke:nth-child(19) { transform: rotate(270deg); }
+		.spoke:nth-child(20) { transform: rotate(285deg); }
+		.spoke:nth-child(21) { transform: rotate(300deg); }
+		.spoke:nth-child(22) { transform: rotate(315deg); }
+		.spoke:nth-child(23) { transform: rotate(330deg); }
+		.spoke:nth-child(24) { transform: rotate(345deg); }
+
+		.stick {
+			background-color: saddlebrown;
+			height: 600px;
+			width: 10px;
+			position: absolute;
+			left: calc(50% - 160px); /* Positions stick to the left of the flag */
+		}
+		.stairs-container {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			left: calc(50% - 180px); /* Aligns stairs under the flagpole */
+			top: 450px;
+
+		}
+		.stairs1,.stairs2,.stairs3{
+			background-color: lightsalmon;
+			border: 2px solid grey;
+			margin-top:0;
+
+		}
+		.stairs1{
+			height: 40px;
+			width: 120px;
+
+				}
+		.stairs2{
+			height: 40px;
+			width: 150px;
+
+		}
+		.stairs3{
+			height: 40px;
+			width: 180px;
+		}
+		.Text{
+			color: red;
+			margin-top: 10px;
+			font-weight: bolder;
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+
+		<div class="stick"></div>
+		<div class="flag">
+			<div class="saffron"></div>
+			<div class="white">
+				<div class="chakra">
+					<!-- 24 spokes -->
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+					<div class="spoke"></div>
+				</div>
+			</div>
+			<div class="green"></div>
+		</div>
+	</div>
+
+	<!-- Stairs aligned below the flagpole -->
+	<div class="stairs-container">
+		<div class="stairs1"></div>
+		<div class="stairs2"></div>
+		<div class="stairs3"></div>
+
+		<figcaption class="Text">Indian Flag</figcaption>
+	</div>
+
+</body>
+</html>
